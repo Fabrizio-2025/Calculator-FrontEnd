@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="background/background.css">
-    <script type="text/javascript" src="Operation.js" ></script>
+    <script type="text/javascript" src="./Operation.js" ></script>
     <link rel="shorcut icon" href="https://cdn-icons-png.flaticon.com/512/1011/1011812.png">
 </head>
 <body>
@@ -16,13 +16,13 @@
     <div class="bg bg3"></div>
     <div class="content">
       <h1>Calculator</h1>
-      <input type="number" placeholder="Insert Number" id="n1" > 
-      <br> <br>
-      <input type="number" placeholder="Insert Number" id="n2" >
-      <br> <br>
-      <h4>Operation Name</h4>
       
     <form action="#">
+        <input type="number" placeholder="Insert Number" id="n1" required> 
+        <br> <br>
+        <input type="number" placeholder="Insert Number" id="n2" required>
+        <br> <br>
+        <h4>Operation Name</h4>
     <select   select  name="operationname" id="OperationName">
         <option value="Addition">Addition</option>
         <option value="Subtraction">Subtraction</option>
@@ -30,8 +30,9 @@
         <option value="Division">Division</option>
     </select>
     <br> <br>
-    <input type="button" value="Operation" onclick="operator()" >
-    </form> 
+    <input id="BtnSbt" type="button" value="Operation" onclick="operator()" >
+    </form>
+    <script src="./Enable.js"></script> 
     <h4>El resultado es : <span id="answerText" > </span></h4>
 
     </div>

@@ -25,6 +25,9 @@ function operator()
     var answer = numer1/numer2;
     document.getElementById('answerText').innerHTML=answer;
     }
-    
-    
+
+ 
 }
+
+
+
